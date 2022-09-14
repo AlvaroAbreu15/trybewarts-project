@@ -15,6 +15,10 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  flex-wrap: wrap;
+  height: 20px;
+  justify-content: space-between;
+  margin: 10px
 }
 
 .img-right {
