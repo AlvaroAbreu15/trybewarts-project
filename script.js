@@ -23,7 +23,20 @@ btn.addEventListener('click', () => {
      }
  });
 
+ let textArea = document.getElementById('textarea');
  
 
+ textArea.addEventListener('input', function () {
+   let labelText = document.getElementById('counter');  
+   let value = textArea.value.length;
+   let caracteres = (500 - (value));
+   labelText.textContent = `${caracteres}`;
+ });
 
 
+textArea.addEventListener('cut', function() {
+   let labelText = document.getElementById('counter');  
+   let value = textArea.value.length;
+   let caracteres = (500 - (value));
+   labelText.textContent = `${caracteres}`;
+});
