@@ -42,3 +42,8 @@ main {
   flex-direction: column;
   margin: 15px;
 }
+
+.div-rate {
+  display: flex;
+  flex-direction: row;
+}
